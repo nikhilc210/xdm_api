@@ -12,6 +12,7 @@ const reactionRoutes = require("./routes/Reaction");
 const path = require("path");
 
 const app = express();
+
 dotenv.config();
 connectDB();
 app.use(express.json());
