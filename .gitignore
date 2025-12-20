@@ -1,0 +1,50 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dotenv environment files
+.env
+.env.local
+.env.*.local
+
+# Compiled output
+dist/
+build/
+coverage/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Optional npm cache directory
+.npm/
+
+# Optional eslint cache
+.eslintcache
+
+# Optional next.js cache
+.next/
+
+# Optional typescript cache
+*.tsbuildinfo
+
+# Backup files
+*.bak
+*.tmp
+
+# Uploaded images or files (if you store them locally during dev)
+uploads/
+public/uploads/
+
+# misc
+*.swp
