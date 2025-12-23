@@ -97,7 +97,7 @@ exports.getNewsDetail = async (req, res) => {
 exports.getFeatured = async (req, res) => {
   const data = await News.find({
     deleted: false,
-    category: "Business",
+    section: "Top Stories",
     contentType: "News",
   })
     .sort({ publishedAt: -1 })
@@ -135,7 +135,8 @@ exports.getNewsList = async (req, res) => {
 exports.getEditorsPick = async (req, res) => {
   const data = await News.find({
     deleted: false,
-    section: "Editor's Pick",
+    section: "Diaspora Voices",
+    contentType: "News",
   })
     .sort({ publishedAt: -1 })
     .limit(20);
@@ -145,7 +146,8 @@ exports.getEditorsPick = async (req, res) => {
 exports.getTrending = async (req, res) => {
   const data = await News.find({
     deleted: false,
-    category: "Trending",
+    section: "Immigration News",
+    contentType: "News",
   })
     .sort({ publishedAt: -1 })
     .limit(20);
@@ -155,7 +157,8 @@ exports.getTrending = async (req, res) => {
 exports.getPolitics = async (req, res) => {
   const data = await News.find({
     deleted: false,
-    section: "Politics",
+    section: "Visa & Travel Guides",
+    contentType: "News",
   })
     .sort({ publishedAt: -1 })
     .limit(20);
@@ -176,7 +179,8 @@ exports.getVideos = async (req, res) => {
 exports.getWorldNews = async (req, res) => {
   const data = await News.find({
     deleted: false,
-    category: "World News",
+    section: "World News",
+    contentType: "News",
   })
     .sort({ publishedAt: -1 })
     .limit(24);
